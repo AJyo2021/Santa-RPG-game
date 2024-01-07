@@ -1,0 +1,3 @@
+/home/sciencemouse/SantaGame/build/CMakeFiles/edit_cache.dir
+/home/sciencemouse/SantaGame/build/CMakeFiles/rebuild_cache.dir
+/home/sciencemouse/SantaGame/build/CMakeFiles/SantaGame.dir

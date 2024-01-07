@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/SantaGame.dir/src/santa.c.o  -o bin/SantaGame  -lSDL2 -lSDL2_image -lSDL2_ttf -lSDL2_mixer 

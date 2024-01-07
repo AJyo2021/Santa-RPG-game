@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sciencemouse/SantaGame/src/santa.c
+SDL2/SDL.h
+/home/sciencemouse/SantaGame/src/SDL2/SDL.h
+SDL2/SDL_image.h
+/home/sciencemouse/SantaGame/src/SDL2/SDL_image.h
+SDL2/SDL_ttf.h
+/home/sciencemouse/SantaGame/src/SDL2/SDL_ttf.h
+SDL2/SDL_mixer.h
+/home/sciencemouse/SantaGame/src/SDL2/SDL_mixer.h
+stdio.h
+-
+stdbool.h
+-
+
