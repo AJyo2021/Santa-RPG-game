@@ -15,4 +15,4 @@ Feel free to fork this repository and experiment with the code. Your contributio
 ## License
 I will be adding an open-source license to this project soon, so stay tuned for updates on licensing terms.
 
-Thank you for your interest in the Santa RPG game project! We look forward to your involvement and hope you enjoy the game.
+Thank you for your interest in the Santa RPG game project! I look forward to your involvement and hope you enjoy the game.
