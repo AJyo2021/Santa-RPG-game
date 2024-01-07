@@ -10,9 +10,9 @@ Welcome to the Santa RPG game project! Please note that this project is a work i
 - I am currently working on creating a packaged build to improve the project's accessibility and stability.
 
 ## Get Involved
-Feel free to fork this repository and experiment with the code. Your contributions and feedback are highly appreciated as we continue to improve and enhance the game.
+Feel free to fork this repository and experiment with the code. Your contributions and feedback are highly appreciated as I continue to improve and enhance the game.
 
 ## License
-We will be adding an open-source license to this project soon, so stay tuned for updates on licensing terms.
+I will be adding an open-source license to this project soon, so stay tuned for updates on licensing terms.
 
 Thank you for your interest in the Santa RPG game project! We look forward to your involvement and hope you enjoy the game.
