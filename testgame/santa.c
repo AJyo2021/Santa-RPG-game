@@ -52,6 +52,8 @@ Enemy *enemys[MAX_ENEMY] = {NULL};
 Mix_Music *mus, *mus2 ;  // Background Music 
 Mix_Chunk *wav , *wav2 ;  // For Sounds
 
+
+
 //Enemy enemys;
 
 int globalTime = 0;
@@ -477,6 +479,15 @@ int main(int argc, char *argv[])
 //  Mix_Music *mus, *mus2 ;  // Background Music 
 //  Mix_Chunk *wav , *wav2 ;  // For Sounds
 //  mus = Mix_LoadMUS("./mixer/ff2prlde.mid");
+  if (Mix_Init(MIX_INIT_MP3) != MIX_INIT_MP3) {
+    printf("Mix_Init Error: %s\n", Mix_GetError());
+    // Handle initialization error.
+    }
+
+  if (Mix_OpenAudio(22050, AUDIO_S16SYS, 2, 4096) == -1) {
+    printf("Mix_OpenAudio Error: %s\n", Mix_GetError());
+    // Handle audio initialization error.
+  }
   mus2 = Mix_LoadMUS("Das_Zauberbuch.mp3");
 
   if (mus2 == NULL)
@@ -492,7 +503,7 @@ int main(int argc, char *argv[])
   // Do something
 //  SDL_Delay(10);
 //  }
-//  Mix_FreeMusic(mus2);
+Mix_FreeMusic(mus2);
 
   Man man;
   man.x = 50;
@@ -652,12 +663,16 @@ int main(int argc, char *argv[])
   SDL_DestroyTexture(GameOverTexture);
   SDL_DestroyTexture(Message);
   Mix_FreeMusic(mus2);
+  Mix_FreeChunk(wav);
+  Mix_FreeChunk(wav2);
   
   for(int i = 0; i < MAX_BULLETS; i++)
     removeBullet(i);
   
   // Clean up
   //TTF_Quit();
+  Mix_CloseAudio();
+  Mix_Quit();
   SDL_Quit();
   return 0;
 }
